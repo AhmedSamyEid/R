@@ -11,6 +11,9 @@
 html {
   scroll-behavior: smooth;
 }
+section {
+  padding: 60px;
+}
 .container {
   padding: 30px 15px;
   margin: auto;
@@ -33,6 +36,7 @@ html {
 header {
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 .container {
   width: 100%;
@@ -167,4 +171,19 @@ label {
 .web {
   background-color: #212529;
   width: 20%;
+}
+.html-css {
+  gap: 100px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.html , .css {
+  font-size: 15px;
+  line-height: 20px;
+  width: 50%;
+  height: 140px;
+  background-color: #b3b7ba;
+  flex-wrap: wrap;
 }
