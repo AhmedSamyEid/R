@@ -102,7 +102,7 @@ label {
     background-color: rgb(201, 196, 196);
   }
   .user img {
-    width: 60%;
+    width: 50%;
   }
 }
 .user img {
@@ -120,27 +120,51 @@ label {
   top: 200px;
   margin-left: 10%;
 }
-.user p,
-.dolor {
+.user p {
   font-size: 20px;
   line-height: 30px;
 }
 .about-us {
   text-align: center;
-  padding: 70px 200px;
+  padding: 70px 100px;
   display: flex;
   gap: 150px;
+  flex-wrap: wrap;
 }
-.about-us h2 {
+.about-us h2,
+.Service h2 {
   font-size: 60px;
 }
-.view {
+.view,
+.Service {
   text-align: center;
 }
 .view a {
   padding: 20px;
   text-decoration: none;
-  border:  solid 1px #212529;
+  border: solid 1px #212529;
   color: #000;
   border-radius: 50px;
+}
+.dolor {
+  flex-wrap: wrap;
+  line-height: 25px;
+}
+.Service {
+  margin-top: 100px;
+  flex-wrap: wrap;
+}
+.Developer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  gap: 40px;
+  margin-top: 100px;
+  flex-wrap: wrap;
+}
+.web {
+  background-color: #212529;
+  width: 20%;
 }
