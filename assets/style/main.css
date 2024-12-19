@@ -8,7 +8,9 @@
   --dark-gunmetal: #212529;
   --platinum: #dee2e6;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .container {
   padding: 30px 15px;
   margin: auto;
@@ -99,7 +101,7 @@ label {
     z-index: 1;
     background-color: rgb(201, 196, 196);
   }
-  .user img  {
+  .user img {
     width: 60%;
   }
 }
@@ -111,13 +113,34 @@ label {
   background-color: rgb(201, 196, 196);
 }
 .user h1,
-p {
+.Freelancer {
   position: relative;
   color: var(--dark-gunmetal);
   font-size: 60px;
   top: 200px;
   margin-left: 10%;
 }
-.user p {
+.user p,
+.dolor {
   font-size: 20px;
+  line-height: 30px;
+}
+.about-us {
+  text-align: center;
+  padding: 70px 200px;
+  display: flex;
+  gap: 150px;
+}
+.about-us h2 {
+  font-size: 60px;
+}
+.view {
+  text-align: center;
+}
+.view a {
+  padding: 20px;
+  text-decoration: none;
+  border:  solid 1px #212529;
+  color: #000;
+  border-radius: 50px;
 }
