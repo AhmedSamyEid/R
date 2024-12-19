@@ -28,11 +28,17 @@
     width: 1170px;
   }
 }
+header {
+  position: sticky;
+  top: 0;
+}
 .container {
   width: 100%;
   display: flex;
   justify-content: space-around;
   background-color: var(--dark-gunmetal);
+  background-size: cover;
+  flex-wrap: wrap;
 }
 .logo a {
   color: var(--white);
@@ -51,4 +57,67 @@ ul {
   margin-top: 10px;
   display: flex;
   gap: 40px;
+}
+label {
+  display: none;
+}
+#check {
+  display: none;
+}
+@media (max-width: 991px) {
+  label {
+    display: block;
+  }
+  nav {
+    display: none;
+  }
+  label {
+    font-size: 25px;
+    cursor: pointer;
+  }
+  label .fa-xmark {
+    position: fixed;
+    margin-top: -20px;
+    z-index: 2;
+    display: none;
+  }
+  #check:checked ~ label .fa-xmark {
+    display: block;
+  }
+  #check:checked ~ nav,
+  ul {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 0;
+    left: 200px;
+    bottom: 120px;
+    right: 0;
+    position: fixed;
+    display: flex;
+    z-index: 1;
+    background-color: rgb(201, 196, 196);
+  }
+  .user img  {
+    width: 60%;
+  }
+}
+.user img {
+  flex-wrap: wrap;
+  margin-left: 45%;
+}
+.user {
+  background-color: rgb(201, 196, 196);
+}
+.user h1,
+p {
+  position: relative;
+  color: var(--dark-gunmetal);
+  font-size: 60px;
+  top: 200px;
+  margin-left: 10%;
+}
+.user p {
+  font-size: 20px;
 }

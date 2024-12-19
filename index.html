@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="assets/style/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
@@ -12,6 +19,11 @@
         <div class="logo">
           <a href="index.html">R</a>
         </div>
+        <input type="checkbox" id="check" />
+        <label for="check">
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-xmark"></i>
+        </label>
         <nav>
           <ul>
             <li><a href="#home">Home</a></li>
@@ -23,5 +35,17 @@
         </nav>
       </div>
     </header>
+    <section class="home" id="home">
+      <div class="user">
+        <div class="hello">
+          <h1>
+            Hello <br />
+            l'm Ahmed
+          </h1>
+          <p>Freelancer Web Developer</p>
+        </div>
+        <img src="assets/images/user.webp" alt="user" />
+      </div>
+    </section>
   </body>
 </html>
